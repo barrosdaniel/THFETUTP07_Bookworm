@@ -3,36 +3,67 @@
 ========================================================= */
 
 /* Change the color of all list items inside an unordered list */
-
+ul li {
+  color: coral;
+}
 
 
 /* Remove the text decoration from navigation links, and change their color when hovered */
+nav a {
+  text-decoration: none;
+}
 
-
+nav a:hover {
+  color: coral;
+}
 
 /* Create visited and hover styles for all links inside 'main' */
+main a:link,
+main a:visited {
+  text-decoration: none;
+  background-color: coral;
+  color: white;
+  /* margin-top: 1rem; */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
 
-
+main a:hover {
+  background-color: transparent;
+  color: gray;
+  border: 1px solid coral;
+}
 
 /* 
  Change the background color of the submit button when active.
  Check teacher's notes for resources on this part of the challenge. */
-
-
+input[type='submit']:active {
+  background-color: coral;
+}
 
 /* Give the text field a blue border upon focus.
    Check teacher's notes for resources on this part of the challenge. */
-
-
+input[type='text']:focus {
+  border: 1px solid blue;
+}
 
 /* Give the 'span' tag in the footer a meaningful class name and reduce its font size */
-
+.copyright-text {
+  font-size: 12px;
+}
 
 
 /* Give the 'img' tag in the header an ID and set its width to 190px */
-
-
+#logo {
+  width: 190px;
+}
 
 /* Target all heading tags on the page and set their font family to 'Bree Serif', serif */
-
-
+h1,
+h2,
+h3 {
+  font-family: 'Bree Serif', serif;
+}
